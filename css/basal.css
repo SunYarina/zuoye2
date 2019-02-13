@@ -1,0 +1,241 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset,input,button{border:0; }
+img,a,span,i,b{display:inline-block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";}
+input,a{outline:none;}
+em{font-style: inherit;}
+
+b,em,span,img,input,button,dl,dt,dd,ul,li,#logo,#address,#nav,#app,#search,#login,article,aside{
+	float: left;
+}
+header,footer,section,nav,#container,#contin{
+	width:1200px;
+	margin:0 auto;
+}
+/* -------------------header-------------------- */
+#header_wrap{
+	height:80px;
+	width:100%;
+	border-bottom: 1px solid #d8d8d8;
+	background: #fff;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 100;
+}
+header{
+	height:80px;	
+}
+#logo{	
+    width: 133px;
+    height: 80px;
+	box-sizing: border-box;
+	padding:20px 0;
+}
+#address{
+	width:68px;
+	height:80px;
+	box-sizing: border-box;
+	padding-top:28px;
+	margin:0 10px;
+	color:#333;
+	cursor: pointer;
+	position:relative;
+}
+#address em{
+	padding-left: 5px;
+}
+#address span,#app span,#login span{
+	width:0;
+	height:0;
+	border-color: #666 transparent transparent transparent;
+	border-style: solid;
+	border-width: 5px;
+	margin-left: 10px;
+	transition: 0.5s;
+}
+#address span{
+	margin-top:10px;
+}
+#address h3,#app h3,#login h3{
+	position: absolute;
+	bottom:-2px;
+	left:0;
+	z-index: 100;
+	height:5px;
+	width:100%;
+	background: #fff;
+	display: none;
+}
+#address .add_s,#app .app_s,#login .login_s{
+	background-color: #fff;
+    border: 1px solid #d8d8d8;
+    position: absolute;
+    z-index: 90;   
+    left:-1px;
+    top: 80px;
+	display: none;
+}
+#address .add_s{
+	 width: 478px;
+    height: 330px;
+	overflow-y: scroll;
+}
+#address .add_s p{
+	height:58px;
+	border-bottom: 1px solid #e5e5e5;
+	line-height: 58px;
+	padding-left: 20px;
+}
+#address .add_s ul b{
+	width:20px;
+	height:20px;
+	background: #eee;
+	text-align: center;
+	line-height: 20px;
+	margin-left: 20px;
+	margin-top:20px;
+}
+#address .add_s ul li{
+	width:420px;
+	margin-top:20px;
+}
+#address .add_s ul li a{
+	padding:2px 5px;
+	font-size: 14px;
+}
+#address .add_s ul li a:hover{
+	background: #EF4238;
+	color:#fff;
+}
+#address:hover,#app:hover,#login:hover{
+	border-left: 1px solid #d8d8d8;
+	border-right:1px solid #d8d8d8;
+}
+#address:hover span,#app:hover span,#login:hover span{
+	transform: rotate(180deg);
+	transform-origin: 50% 20%;
+}
+#address:hover h3,#address:hover .add_s,#app:hover .app_s,#app:hover h3,#login:hover .login_s,#login:hover h3{
+	display: block;
+}
+#app span{
+	margin-top:8px;
+}
+#login span{
+	margin-top:16px;
+}
+#nav li a{
+	width:80px;
+	height:80px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 18px;
+}
+#nav li:hover a{
+	color:#EF4238;
+}
+#app{
+	width:132px;
+	height:80px;
+	box-sizing: border-box;
+	padding:28px 0;
+	margin:0 10px;
+	text-align: center;
+	position:relative;
+}
+#app>img{
+	margin:0 10px;	
+}
+#app .app_s{
+	width: 100%;
+    height: 165px;	
+}
+#app .app_s img{
+	margin:18px 24px;
+}
+#app .app_s h4,#app .app_s p{
+	font-size: 14px;
+}
+#app .app_s p{
+	color:#999;
+}
+#search{
+	width:260px;
+	height:40px;
+	border-radius:20px;
+	border:1px solid #ccc;
+	margin-top:20px;
+	background: #faf8fa;
+}
+#search input{
+	width:200px;
+	height:38px;
+	margin-left:20px;
+	background: #faf8fa;
+}
+#search button{
+	width:40px;
+	height:40px;
+	background:#ef4238;
+	border-radius:20px;
+	position:relative;
+}
+#search button img{
+	position:absolute;
+	left: 0;
+	top:0;
+}
+#login{
+	width:70px;
+	height:80px;
+	box-sizing: border-box;
+	padding:20px 0;
+	margin-left: 15px;
+	position:relative;
+}
+#login img{
+	width:40px;
+	height:40px;
+	margin-left:5px;
+}
+#login .login_s{
+	width:100%;
+	height:50px;
+}
+#login .login_s a{
+	margin-left: 20px;
+	font-size: 14px;
+	margin-top:20px;
+	color:#999;
+}
+#login .login_s a:hover{
+	color:#EF4238;
+	text-decoration: underline;
+}
+/* --------------------footer-------------------- */
+#footer_wrap{
+	width:100%;
+	height:220px;
+	background: #262426;
+}
+footer{
+	height:220px;
+	box-sizing: border-box;
+	padding-top:55px;
+}
+footer p{
+	color:#666;
+	text-align: center;
+	font-size: 14px;
+	line-height: 22px;
+}
+footer p a{
+	color:#ef4238;
+}
+footer p a:hover{
+	text-decoration: underline;
+}
